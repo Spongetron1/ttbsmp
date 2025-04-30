@@ -45,6 +45,27 @@
             background-color:#6514fc;
             color: white;
         }
+        .button{
+        background-color: rgb(255,28,51);
+        padding: 10px 25px;
+        border-radius: 4px;
+        transition-duration: 0.2s;
+        }
+    .button:hover{
+        background-color: rgb(204, 27, 45);
+        cursor: pointer;
+        padding: 10px 25px;
+        border-radius: 4px;
+        transition-duration: 0.2s;
+        }
+    .button:active{
+        background-color: rgb(255,28,51);
+        transform: translateY(5px);
+        padding: 10px 25px;
+        border-radius: 4px;
+        transition-duration: .10s;
+        cursor: pointer;
+        }
     </style>
         <meta charset="utf-8" />
             <title>
@@ -58,7 +79,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="TTBSMP_rules.html">Rules</a></li>
                 <li><a href="TTBSMP_about_us.html">About us</a></li>
-                <li><a class = "active">Feedback</a></li>
+                <li><a class ="active">Feedback</a></li>
                 <li><a href="TTBSMP_report.html">Report</a></li>
             </ul>
         </nav>
@@ -82,7 +103,7 @@
                 <br>
                 <textarea class = "font" rows="10" cols="40" id="feedback" name="feedback" required></textarea>
                 <br>
-                <input class = "font" type="Submit">
+                <input class = "button font" type="Submit">
                 <br>
                 <br>
             </form>
