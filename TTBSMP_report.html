@@ -45,6 +45,27 @@
             background-color:#6514fc;
             color: white;
         }
+        .button{
+        background-color: rgb(255,28,51);
+        padding: 10px 25px;
+        border-radius: 4px;
+        transition-duration: 0.2s;
+        }
+    .button:hover{
+        background-color: rgb(204, 27, 45);
+        cursor: pointer;
+        padding: 10px 25px;
+        border-radius: 4px;
+        transition-duration: 0.2s;
+        }
+    .button:active{
+        background-color: rgb(255,28,51);
+        transform: translateY(5px);
+        padding: 10px 25px;
+        border-radius: 4px;
+        transition-duration: .10s;
+        cursor: pointer;
+        }
     </style>
         <meta charset="utf-8" />
             <title>
@@ -69,7 +90,7 @@
             <h3 class="greeting">Here you can report people for cheating, exploiting, or hacking.</h3>
             <form class="contact-form" action="https://formsubmit.co/e7af3d45a6b6372d6c52234010b95a3e" method="POST">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://spongetron1.github.io/ttbsmp/Success.html">
+                <input type="hidden" name="_next" value="https://spongetron1.github.io/ttpsmp/Success.html">
                 <label for="fname"> Your first name:</label>
                 <input class="font" type="text" id="fname" name="fname" required>
                 <br>
@@ -84,9 +105,9 @@
                 <br>
                 <label for="Reason">Reason for report (aka elaborate further):</label>
                 <br>
-                <textarea class = "font" rows="10" cols="40" id="Reason" name="Reason" required></textarea>
+                <textarea class = "font" rows="10" cols="40" id="feedback" name="feedback" required></textarea>
                 <br>
-                <input class = "font" type="Submit">
+                <input class = "button font" type="Submit">
                 <br>
                 <br>
             </form>
