@@ -9,8 +9,26 @@
         font-family: "Special Gothic Expanded One", sans-serif;
         font-weight: 400;
         font-style: normal;
-}
+        }
+        .form {
+            margin-top: 70px;
+            text-align: center;
+            border-style: solid;
+            border-radius: 15px;
+            border-width: 3px;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
 
+            width:700px;
+            
+        }
+        #fname {
+            margin-right: 10px;
+        }
+        #feedback{
+            text-align: center;
+        }
         .greeting{
             text-align: center;
         }
@@ -87,26 +105,25 @@
             <h1 class = "greeting">
                 Feedback
             </h1>
-            <h2 class="greeting">Here you can send feedback about the server and give suggestions on changes.</h2>
+            <h3 class="greeting">Here you can send feedback about the server and give suggestions on changes.</h3>
             <form class="contact-form" action="https://formsubmit.co/e7af3d45a6b6372d6c52234010b95a3e" method="POST">
-                <input type="hidden" name="_cc" value="greenpuppysing1@gmail.com">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://spongetron1.github.io/ttbsmp/Success.html">
-                <label for="fname">First name:</label>
-                <input class="font" type="text" id="fname" name="fname" required>
-                <br>
-                <br>
-                <label for="lname">Last name:</label>
-                <input class="font" type="text" id="lname" name="lname" required>
-                <br>
-                <br>
-                <label for="feedback">Your feedback here:</label>
-                <br>
-                <textarea class = "font" rows="10" cols="40" id="feedback" name="feedback" required></textarea>
-                <br>
-                <input class = "button font" type="Submit">
-                <br>
-                <br>
+                <div class="form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://spongetron1.github.io/ttbsmp/Success.html">
+                    <label for="fname">First name:</label>
+                    <input class="font" type="text" id="fname" name="fname" required>
+                    <label for="lname">Last name:</label>
+                    <input class="font" type="text" id="lname" name="lname" required>
+                    <br>
+                    <br>
+                
+                    <label id="fbacklbl" for="feedback">Your feedback here:</label>
+                    <br>
+                    <textarea class = "font" rows="10" cols="40" id="feedback" name="feedback" required></textarea>
+                    <br>
+                    <br>
+                    <input class = "button font" type="Submit">
+                </div>
             </form>
         </div>
 
