@@ -14,13 +14,22 @@
         .greeting{
             text-align: center;
         }
+        .topnav {
+            top: 5px;
+            position: sticky;
+            opacity: 90%;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(100,100,100,0.7);
+            border-radius: 5px;
+        }
         .topnav ul{
             overflow: hidden;
-            background-color: gray;
             border-radius: 5px;
             height: 40px;
             list-style-type: none;
             padding: 0px;
+            padding-left: -2px;
             text-align: center;
             text-decoration: none;
             margin: 2px;
@@ -64,7 +73,7 @@
         </nav>
         <div class = "font">
             <h1 class = "greeting">
-                Welcome to the TTBSMP website.
+                Welcome to the TTBSMP website
             </h1>
             <h2 class="greeting">
             Here you will find everything you need to know about the server.
@@ -146,6 +155,6 @@
             </ul>
             <p class="greeting">Copyright © 2025 TTBSMP. All rights reserved.</p>
         </div>
-        
+
     </body>
 </html>
